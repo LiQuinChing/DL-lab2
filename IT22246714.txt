@@ -1,0 +1,11 @@
+1. What happens when the number of hidden nodes increase?
+Training accuracy generally increases because the network can represent more complex decision boundaries.
+The decision boundary becomes more curved and can fit the flower dataset much better.
+If we keep increasing too much (like 100+ neurons for a tiny dataset), the network can start overfitting, the training accuracy will be near 100%, but it might not generalize as well to unseen data.
+
+2. Can you explain the pattern of the accuracy when the hidden nodes increase? 
+Small hidden size (e.g., 1–3 neurons) : The network is underfitting; accuracy is low, and the decision boundary is too simple (almost linear).
+
+Moderate hidden size (4–20 neurons) : Accuracy rises significantly, and the boundary matches the dataset’s nonlinear shape.
+
+Very large hidden size (50+ neurons) : Accuracy may slightly improve or plateau; risk of overfitting increases; training accuracy is high, but test accuracy may not improve much.
